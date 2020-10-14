@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part-time.studio預約表單</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Merriweather+Sans:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="card u-mt-36 u-mb-36">
+                <div class="row">
+                    <div class="col-1-3">
+                        <div class="form-bg">
+                            <h6 class="heading-primary">Part-Time</h6>
+                            <h4 class="heading-second">Studio</h4>
+                            <!-- <p class="massage">price</p> -->
+                        </div>
+                    </div>
+                    <div class="col-2-3 bg-color--primary">
+                        <div class="row u-mt-16">
+                            <div class="col-1-2 u-padding-8 u-pl-24">
+                                <label for="name">姓名</label><br>
+                                <input id="name" type="text">
+                            </div>
+                            <div class="col-1-2 u-padding-8">
+                                <label for="lineID">LINE ID</label><br>
+                                <input id="lineID" type="text">
+                            </div>
+                        </div>
+                        <div class="row u-mt-16">
+                            <div class="col-1-2 u-padding-8 u-pl-24">
+                                <label for="phone">手機</label><br>
+                                <input id="phone" type="text">
+                            </div>
+                            <div class="col-1-2 u-padding-8">
+                                <p>是否需卸甲</p>
+                                <label class="u-pr-24" for="yes"><input id="yes" name="remove" type="radio">是</label>
+                                <label class="u-pl-8 u-pr-24" for="no"><input id="no" name="remove" type="radio">否</label>
+                            </div>
+                        </div>
+                        <div class="row u-mt-16">
+                            <div class="col-1-1 u-padding-8 u-pl-24">
+                                <p>施作款式</p>
+                                <label class="u-pr-8" for="style1"><input id="style1" name="style" type="radio">單色光療</label>
+                                <label class="u-pr-8 u-pl-8" for="style2"><input id="style2" name="style" type="radio">漸層</label>
+                                <label class="u-pr-8 u-pl-8" for="style3"><input id="style3" name="style" type="radio">貓眼</label>
+                                <label class="u-pr-8 u-pl-8" for="style4"><input id="style4" name="style" type="radio">法式</label>
+                                <label class="u-pr-8 u-pl-8" for="style5"><input id="style5" name="style" type="radio">指定款</label>
+                                <label class="u-pr-8 u-pl-8" for="style6"><input id="style6" name="style" type="radio">不挑款</label>
+                            </div>
+                        </div>
+                        <div class="row u-mt-16">
+                            <div class="col-1-2 u-padding-8 u-pl-24">
+                                <label for="date">預約日期</label><br>
+                                <input id="date" type="date">
+                            </div>
+                            <div class="col-1-2 u-padding-8">
+                                <label for="time">預約時段</label><br>
+                                <select name="time" id="time">
+                                    <option value="">11:00</option>
+                                    <option value="">15:00</option>
+                                    <option value="">18:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row u-mt-16">
+                            <div class="col-1-1 u-padding-8 u-pl-24">
+                                <label for="remarks">其他需求</label><br>
+                                <textarea name="" id="remarks" cols="57" rows="4">樣式描述、預算等</textarea>
+                            </div>
+                        </div>
+                        <div class="row u-text-right">
+                            <div class="col-1-1"><input type="submit" class="btn btn--primary u-margin-20 u-mr-40"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
