@@ -28,10 +28,6 @@
     .bg-color--primary {
         background-color: #faf7f1;
     }
-    
-    .bg-color--white {
-        background-color: #fff;
-    }
     /* ------------------- */
     /* Utility */
     /* ------------------- */
@@ -60,56 +56,28 @@
         margin-bottom: 36px !important;
     }
     
-    .u-mb-8 {
-        margin-bottom: 8px !important;
-    }
-    
-    .u-mb-24 {
-        margin-bottom: 24px !important;
-    }
-    
-    .u-mb-32 {
-        margin-bottom: 32px !important;
-    }
-    
     .u-margin-20 {
         margin: 20px !important;
-    }
-    
-    .u-mr-40 {
-        margin-right: 40px !important;
-    }
-    
-    .u-pr-8 {
-        padding-right: 8px !important;
-    }
-    
-    .u-pr-24 {
-        padding-right: 24px !important;
-    }
-    
-    .u-pl-8 {
-        padding-left: 8px !important;
-    }
-    
-    .u-pr-24 {
-        padding-right: 24px !important;
-    }
-    
-    .u-padding-12 {
-        padding: 12px !important;
     }
     
     .u-padding-8 {
         padding: 8px !important;
     }
     
+    .u-pr-8 {
+        padding-right: 8px !important;
+    }
+    
+    .u-pl-8 {
+        padding-left: 8px !important;
+    }
+    
     .u-pl-24 {
         padding-left: 24px !important;
     }
     
-    .u-resize-none {
-        resize: none;
+    .u-pr-55 {
+        padding-right: 55px !important;
     }
     /* ------------------- */
     /* Heading & Text */
@@ -130,7 +98,6 @@
     }
     
     h4 {
-        font-family: 'Londrina Outline';
         font-size: 36px;
         font-weight: 500;
         color: #ffffff;
@@ -151,6 +118,7 @@
     }
     
     .heading-second {
+        font-family: 'Londrina Outline';
         font-size: 40px;
         color: #fff;
         line-height: 6px;
@@ -222,10 +190,6 @@
         box-shadow: none;
         border: none;
         border-radius: 4px;
-    }
-    
-    input.btn:focus {
-        /* outline: 0; */
     }
     
     .btn.btn--primary {
@@ -305,6 +269,7 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         display: none;
     }
+    /* RWD */
     
     @media (min-width:768px) {
         .row {
@@ -346,10 +311,17 @@
         .sm-pl-0 {
             padding-left: 0px !important;
         }
+        .btn-center {
+            text-align: center;
+        }
     }
     
     @media (max-width:375px) {
         .xs-pl-24 {
             padding-left: 24px !important;
+        }
+        .xs-margin-0 {
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
         }
     }
