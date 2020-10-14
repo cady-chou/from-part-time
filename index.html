@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Merriweather+Sans:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -20,66 +21,87 @@
                         <div class="form-bg">
                             <h6 class="heading-primary">Part-Time</h6>
                             <h4 class="heading-second">Studio</h4>
-                            <!-- <p class="massage">price</p> -->
                         </div>
                     </div>
                     <div class="col-2-3 bg-color--primary">
-                        <div class="row u-mt-16">
-                            <div class="col-1-2 u-padding-8 u-pl-24">
-                                <label for="name">姓名</label><br>
-                                <input id="name" type="text">
-                            </div>
-                            <div class="col-1-2 u-padding-8">
-                                <label for="lineID">LINE ID</label><br>
-                                <input id="lineID" type="text">
-                            </div>
+                        <div class="from-sm-bg">
+                            <h6 class="heading-primary">Part-Time</h6>
+                            <h4 class="heading-second">Studio</h4>
                         </div>
-                        <div class="row u-mt-16">
-                            <div class="col-1-2 u-padding-8 u-pl-24">
-                                <label for="phone">手機</label><br>
-                                <input id="phone" type="text">
+                        <form action="" class="form">
+
+                            <div class="icon">
+                                <a href="https://www.instagram.com/part_time.studio/?hl=zh-tw" target="_blank" title="嘿 先來看一下美甲作品吧 : )">
+                                    <i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/part_timestudio-102724984554650" target="_blank" title="粉絲專頁">
+                                    <i class="fab fa-facebook-square"></i></a>
+                                <a href="https://lin.ee/8gitoDb" target="_blank" title="加入LINE好友享最新優惠及資訊">
+                                    <i class="fab fa-line"></i></a>
                             </div>
-                            <div class="col-1-2 u-padding-8">
-                                <p>是否需卸甲</p>
-                                <label class="u-pr-24" for="yes"><input id="yes" name="remove" type="radio">是</label>
-                                <label class="u-pl-8 u-pr-24" for="no"><input id="no" name="remove" type="radio">否</label>
+
+                            <div class="row u-mt-12">
+                                <div class="col-1-2 u-padding-8 u-pl-24">
+                                    <label for="name">姓名</label><br>
+                                    <input id="name" type="text">
+                                </div>
+                                <div class="col-1-2 u-padding-8 md-pl-24">
+                                    <label for="lineID">LINE ID</label><br>
+                                    <input id="lineID" type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row u-mt-16">
-                            <div class="col-1-1 u-padding-8 u-pl-24">
-                                <p>施作款式</p>
-                                <label class="u-pr-8" for="style1"><input id="style1" name="style" type="radio">單色光療</label>
-                                <label class="u-pr-8 u-pl-8" for="style2"><input id="style2" name="style" type="radio">漸層</label>
-                                <label class="u-pr-8 u-pl-8" for="style3"><input id="style3" name="style" type="radio">貓眼</label>
-                                <label class="u-pr-8 u-pl-8" for="style4"><input id="style4" name="style" type="radio">法式</label>
-                                <label class="u-pr-8 u-pl-8" for="style5"><input id="style5" name="style" type="radio">指定款</label>
-                                <label class="u-pr-8 u-pl-8" for="style6"><input id="style6" name="style" type="radio">不挑款</label>
+                            <div class="row u-mt-16 md-mt-0">
+                                <div class="col-1-2 u-padding-8 u-pl-24">
+                                    <label for="phone">手機</label><br>
+                                    <input id="phone" type="tel">
+                                </div>
+                                <div class="col-1-2 u-padding-8 md-pl-24">
+                                    <p>是否需卸甲</p>
+                                    <label class="u-pr-24" for="yes"><input id="yes" name="remove" type="radio">是</label>
+                                    <label class="u-pl-8 u-pr-24" for="no"><input id="no" name="remove" type="radio">否</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row u-mt-16">
-                            <div class="col-1-2 u-padding-8 u-pl-24">
-                                <label for="date">預約日期</label><br>
-                                <input id="date" type="date">
+                            <div class="row u-mt-16 md-mt-0">
+                                <div class="col-1-1 u-padding-8 u-pl-24">
+                                    <p>施作款式</p>
+                                    <label class="u-pr-8" for="style1"><input id="style1" name="style" type="radio">單色光療</label>
+                                    <label class="u-pr-8 u-pl-8" for="style2"><input id="style2" name="style" type="radio">漸層</label>
+                                    <label class="u-pr-8 u-pl-8" for="style3"><input id="style3" name="style" type="radio">貓眼</label>
+                                    <label class="u-pr-8 u-pl-8" for="style4"><input id="style4" name="style" type="radio">法式</label>
+                                    <label class="u-pr-8 u-pl-8 sm-pl-0" for="style5"><input id="style5" name="style" type="radio">指定款</label>
+                                    <label class="u-pr-8 u-pl-8 sm-pl-0 xs-pl-24" for="style6"><input id="style6" name="style" type="radio">不挑款</label>
+                                </div>
                             </div>
-                            <div class="col-1-2 u-padding-8">
-                                <label for="time">預約時段</label><br>
-                                <select name="time" id="time">
-                                    <option value="">11:00</option>
-                                    <option value="">15:00</option>
-                                    <option value="">18:30</option>
-                                </select>
+                            <div class="row u-mt-16 md-mt-0">
+                                <div class="col-1-2 u-padding-8 u-pl-24">
+                                    <label for="date">預約日期</label><br>
+                                    <input id="date" type="date">
+                                </div>
+                                <div class="col-1-2 u-padding-8 md-pl-24">
+                                    <label for="time">預約時段</label><br>
+                                    <select name="time" id="time">
+                                        <option value="">11:00</option>
+                                        <option value="">15:00</option>
+                                        <option value="">18:30</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row u-mt-16">
-                            <div class="col-1-1 u-padding-8 u-pl-24">
-                                <label for="remarks">其他需求</label><br>
-                                <textarea name="" id="remarks" cols="57" rows="4">樣式描述、預算等</textarea>
+                            <div class="row u-mt-16 md-mt-0">
+                                <div class="col-1-1 u-padding-8 u-pl-24">
+                                    <label for="remarks">其他需求</label><br>
+                                    <textarea name="" id="remarks" cols="" rows="4" placeholder="樣式描述、特殊需求、預算等"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row u-text-right">
-                            <div class="col-1-1"><input type="submit" class="btn btn--primary u-margin-20 u-mr-40"></div>
-                        </div>
+                            <div class="row u-text-right">
+                                <div class="col-5-6 end-massage  u-margin-20 u-pl-8">感謝您的預約及耐心填寫☺若收到您的表單將以LINE聯繫。<br>
+                                    <span>
+                                        (是否預約成功以LINE通知確認，有問題歡迎<a href="https://lin.ee/8gitoDb" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png">加入LINE</a>詢問。)
+                                    </span>
+                                </div>
+                                <div class="col-1-6"><input type="submit" class="btn btn--primary u-margin-20 u-mr-40"></div>
+                            </div>
+                        </form>
                     </div>
+
                 </div>
             </div>
         </div>
