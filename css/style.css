@@ -2,6 +2,9 @@
     /* Globel */
     /* ------------------- */
     
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Merriweather+Sans:ital,wght@0,700;0,800;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
     * {
         position: relative;
         box-sizing: border-box;
@@ -9,17 +12,28 @@
     
     body,
     html {
-        font-family: 微軟正黑體;
+        font-family: 'Noto Sans TC', sans-serif;
     }
     
     a {
-        color: #a784c4;
+        color: #9E9E93;
         font-weight: 600;
     }
     
     .wrapper {
-        background-color: #eeeeee;
+        background-image: url(../img/pt-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         min-height: 100vh;
+    }
+    
+    @media (max-width:768px) {
+        .wrapper {
+            background-image: url(../img/RWD-BG.png);
+            background-size: contain;
+            background-repeat: repeat;
+        }
     }
     /* ------------------- */
     /* Color */
@@ -120,9 +134,9 @@
     .heading-second {
         font-family: 'Londrina Outline';
         font-size: 40px;
-        color: #fff;
+        color: #ffffff;
         line-height: 6px;
-        padding-left: 128px
+        padding-left: 128px;
     }
     
     .end-massage {
@@ -174,8 +188,10 @@
         margin: 0 auto;
         background-color: #fff;
         box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
-        border-radius: 2px;
+        border-radius: 20px;
         max-width: 800px;
+        border: 3px solid rgba(0, 0, 0, 0.8);
+        overflow: hidden;
     }
     /* Btn */
     
@@ -193,7 +209,11 @@
     }
     
     .btn.btn--primary {
-        background: linear-gradient(to top, #c6b2d5, #dfcaf0);
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+    }
+    
+    .btn.btn--primary:hover {
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     }
     /* Form */
     
@@ -229,7 +249,7 @@
     .form select:focus,
     .form textarea:focus {
         outline: 0;
-        border: 1px solid #c6b2d5;
+        border: 1px solid #9E9E93;
     }
     /* ------------------- */
     /* Custom */
@@ -237,18 +257,13 @@
     
     .form-bg {
         height: 100%;
-        background: #f3e7cd;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #c6b2d5, #f8cbaf, #f3e7cd);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #c6b2d5, #f8cbaf, #f3e7cd);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #d3d4cc;
     }
     
     .fab {
         display: inline-block;
         font-size: 16px;
-        color: #dbdbdb;
+        color: #d3d2d2;
         margin: 12px 5px 0px 0px;
     }
     
@@ -257,16 +272,13 @@
     }
     
     .fab:hover {
-        color: #c6b2d5;
+        color: #9E9E93;
     }
     
     .from-sm-bg {
-        background: #f3e7cd;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, #c6b2d5, #f8cbaf, #f3e7cd);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, #c6b2d5, #f8cbaf, #f3e7cd);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-color: #DCD9D4;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+        background-blend-mode: soft-light, screen;
         display: none;
     }
     /* RWD */
