@@ -30,9 +30,9 @@
     
     @media (max-width:768px) {
         .wrapper {
-            background-image: url(../img/RWD-BG.png);
-            background-size: contain;
-            background-repeat: repeat;
+            background-image: url(../img/rwd-pt-bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
     /* ------------------- */
@@ -193,6 +193,12 @@
         border: 3px solid rgba(0, 0, 0, 0.8);
         overflow: hidden;
     }
+    
+    @media (max-width:768px) {
+        .card {
+            border: 2px solid rgba(0, 0, 0, 0.8);
+        }
+    }
     /* Btn */
     
     .btn {
@@ -257,7 +263,8 @@
     
     .form-bg {
         height: 100%;
-        background: #d3d4cc;
+        background-image: url(../img/form-bg.png);
+        background-size: contain;
     }
     
     .fab {
